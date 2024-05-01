@@ -75,5 +75,5 @@ app.post("/contact", function(req, res) {
 // Start the server
 let port = process.env.PORT || 3000;
 app.listen(port, function() {
-  console.log("Server is started successfully");
+  console.log("Server isstarted successfully");
 });
