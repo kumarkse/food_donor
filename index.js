@@ -37,40 +37,40 @@ app.post("/RegisterLoginDonar", function(req, res) {
 });
 
 app.get("/RegisterLoginVolunteer", function(req, res) {
-  res.render("volunteerLogin", { warning: "" });
+  res.sendFile(__dirname + "/contact.html")
 });
 
-app.post("/RegisterLoginVolunteer", function(req, res) {
-  // Registration/Login logic for volunteers
-});
+// app.post("/RegisterLoginVolunteer", function(req, res) {
+//   res.render("p1")
+// });
 
-app.get("/finaldonate/:username", function(req, res) {
-  res.sendFile(__dirname + "/finaldonate.html");
-});
+// app.get("/finaldonate/:username", function(req, res) {
+//   res.sendFile(__dirname + "/finaldonate.html");
+// });
 
-app.post("/finaldonate/:username", function(req, res) {
-  // Donation submission logic
-});
+// app.post("/finaldonate/:username", function(req, res) {
+//   // Donation submission logic
+// });
 
-app.get("/donations", function(req, res) {
-  res.render("volunteer", { name: [] });
-});
+// app.get("/donations", function(req, res) {
+//   res.render("volunteer", { name: [] });
+// });
 
-app.post("/donations", function(req, res) {
-  // Search and display donations logic
-});
+// app.post("/donations", function(req, res) {
+//   // Search and display donations logic
+// });
 
-app.get("/foodDetails/:username", function(req, res) {
-  res.sendFile(__dirname + "/foodDetails.html");
-});
+// app.get("/foodDetails/:username", function(req, res) {
+//   res.sendFile(__dirname + "/foodDetails.html");
+// });
 
-app.post("/foodDetails/:username", function(req, res) {
-  // Add food details logic
-});
+// app.post("/foodDetails/:username", function(req, res) {
+//   // Add food details logic
+// });
 
-app.post("/contact", function(req, res) {
-  // Contact form submission logic
-});
+// app.post("/contact", function(req, res) {
+//   // Contact form submission logic
+// });
 
 // Start the server
 let port = process.env.PORT || 3000;
