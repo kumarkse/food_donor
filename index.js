@@ -37,7 +37,7 @@ app.post("/RegisterLoginDonar", function(req, res) {
 });
 
 app.get("/RegisterLoginVolunteer", function(req, res) {
-  res.sendFile(__dirname + "/contact.html")
+  res.render("volunteerLogin", { warning: '' });
 });
 
 // app.post("/RegisterLoginVolunteer", function(req, res) {
